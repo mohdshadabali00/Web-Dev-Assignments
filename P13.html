@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadab - Flexbox vs Grid Combined Layout</title>
+    <link rel="stylesheet" href="P13.css">
+</head>
+<body>
+
+    <!-- Outer Page Structure = CSS GRID (2D Layout) -->
+    <div class="dashboard-grid">
+
+        <!-- 1. Top Navbar (Uses FLEXBOX for 1D alignment) -->
+        <header class="navbar">
+            <span class="logo">Shadab.dev</span>
+            <nav class="nav-links">
+                <a href="#">Overview</a>
+                <a href="#">Assignments</a>
+                <a href="#">Profile</a>
+            </nav>
+        </header>
+
+        <!-- 2. Left Sidebar (Placed by GRID) -->
+        <aside class="sidebar">
+            <h3>Modules</h3>
+            <ul>
+                <li>Module 1: Git &amp; CLI</li>
+                <li>Module 2: HTML &amp; CSS</li>
+                <li>Module 3: Grid &amp; Flex</li>
+            </ul>
+        </aside>
+
+        <!-- 3. Main Area (Uses FLEXBOX for card row & inner card alignment) -->
+        <main class="main-area">
+            <h2>Grid (Outer Page) + Flexbox (Inner Components)</h2>
+
+            <div class="card-row">
+                <div class="card">
+                    <h3>Why CSS Grid?</h3>
+                    <p>Best for 2D page layouts with rows and columns like Header, Sidebar, and Main area.</p>
+                    <div class="card-footer">
+                        <span>2D Layout</span>
+                        <button class="btn">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Why Flexbox?</h3>
+                    <p>Best for 1D alignment inside navbars, card rows, and button groups.</p>
+                    <div class="card-footer">
+                        <span>1D Layout</span>
+                        <button class="btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 4. Footer (Placed by GRID) -->
+        <footer class="footer">
+            <p>&copy; 2026 Mohd Shadab Ali &bull; P13 Combined Grid &amp; Flexbox Practical</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
